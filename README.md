@@ -25,6 +25,16 @@ and 3 prompting strategies (zero_shot, few_shot, chain-of-thought) for a total
 of 180 API calls. Results were measured by accuracy, per-class F1, format
 compliance, latency, and cost.
 
+## Data
+The test set (`data/test_set.csv`) contains 30 manually labeled British Airways
+passenger reviews sampled from a public dataset of 3,427 reviews
+(reviews_data1.csv, sourced from Kaggle).
+
+The full raw dataset is not included in this repo due to size. This is the link to download https://www.kaggle.com/datasets/lapodini/british-airway-reviews
+The 30 sampled reviews cover three complexity tiers:
+- 20 easy (clear positive or negative)
+- 5 hard (mixed signals, nuanced language)
+- 5 really difficult (very short or very long reviews)
 ---
 
 ## 2. Models and Tools Used
